@@ -40,7 +40,7 @@ INSTALLED_APPS = [
     'corsheaders',
     'rest_framework',
     'graphene_django',
-    'users.apps.UsersConfig',
+    'users'
 ]
 
 MIDDLEWARE = [
@@ -119,10 +119,15 @@ USE_L10N = True
 USE_TZ = True
 
 
+GRAPHENE ={ 
+    'SCHEMA': 'users.schema.schema'
+}
+
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 
 STATIC_URL = '/static/'
 CORS_ORIGIN_WHITELIST = (
     'http://localhost:3000',
+    'http://127.0.0.1:3000'
 )

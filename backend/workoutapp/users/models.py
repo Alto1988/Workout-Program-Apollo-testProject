@@ -9,8 +9,3 @@ class Trainees(models.Model):
     workout_type = models.CharField(max_length=20)
 
 
-
-class Message(models.Model):
-    user = models.ForeignKey('auth.User', on_delete = models.CASCADE)
-    message = models.TextField()
-    creation_at = models.DateTimeField(auto_now_add=True)

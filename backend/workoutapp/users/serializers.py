@@ -5,3 +5,6 @@ class TraineesSerializer(serializers.ModelSerializer):
     class Meta:
         model = Trainees
         fields = ('id', 'userName', 'workout_type')
+
+
+

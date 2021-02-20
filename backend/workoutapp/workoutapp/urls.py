@@ -25,9 +25,9 @@ router = routers.DefaultRouter()
 router.register(r'users', views.TraineesView, 'users')
 
 urlpatterns = [
-    path('users/', include('users.urls')),
-    path('graphql/', csrf_exempt(GraphQLView.as_view(graphiql=True))),
-    path('gql', csrf_exempt(GraphQLView.as_view(batch=True))), 
-    path('api/', include(router.urls)),
-    path('admin/', admin.site.urls)
+    # path(r'users/', include('users.urls')),
+    path(r'graphql/', csrf_exempt(GraphQLView.as_view(graphiql=True))),
+    # path(r'gql', csrf_exempt(GraphQLView.as_view(batch=True))), 
+    # path(r'api/', include(router.urls)),
+    path(r'admin/', admin.site.urls)
 ]
