@@ -9,6 +9,11 @@ verify_ssl = true
 django = "*"
 djangorestframework = "*"
 django-cors-headers = "*"
+graphene-django = "*"
+pytest = "*"
+pytest-django = "*"
+mixer = "*"
+pytest-cov = "*"
 
 [requires]
 python_version = "3.8"
