@@ -14,6 +14,7 @@ pytest = "*"
 pytest-django = "*"
 mixer = "*"
 pytest-cov = "*"
+djangorestframework-jwt = "*"
 
 [requires]
 python_version = "3.8"
